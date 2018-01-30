@@ -1,54 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 
-
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>
-        <h1>Mehreen's Bio Page!</h1>
-    </title>
+  <meta charset="utf-8">
+
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
-
 <body>
-    <h1>Mehreen Hai</h1>
-    <img src="Aerial03.jpg" alt="My photo would appear here!" width="500" height="300">
+  <div class='container navbar'>
+      <div class='row nav'>
+          <div class= "outer_nav col-md-12">
+                
+                <div class="col-md-2">
+                    <header>
+                        <h1>Lattitude</h1>
+                    </header>
+                </div>
+                <div class="list_items text">
+                        <ul class='text'>
+                            
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="comparison.html">Comparison</a></li>
+                                <li><a href="data.html">Data</a></li>
+                                <li><a href="data.html">Plots</a></li>
+                                
+                        </ul>
+                 </div>
+                    
+          </div>
+            
+      </div>
 
-    <p>My name is Mehreen and I'm a Data Analyst. I am also studying Data Science at the moment.</p>
-    <p>I like to waste my free time watching stuff online, and I also love reading books.</p>
-    
+  </div>
 
-    <ul>
-            <li>
-                <a href="https://www.facebook.com/mehreenhai" target="_blank">Say Hi on Fb!</a>   
-            </li>
-            <li>    
-                <a href="https://twitter.com/mehreenhai?lang=en"><b>Or find me on Twitter!</b> </a>
-            </li>
-        </ol>
-    <br>
-    <br>
-    <table border="1">
-        <tr>
-            <th>
-            "Something"
-            </th>
-        </tr>
-        <tr>
-            <td>
-            "Anything"
-            </td>
-        </tr>
-    </table>
-        
-    <br>
-    <br>
 
-    
+  <div class= "main container col-md-7">
+        <section id="main-bio_">
+                <section id="figure_">
+                  <h1 class= 'subhead'>Summary: Latitude Vs. X</h1>                        
+                  <img id="bio-image_" src="temp.png" alt="Latitude vs. Temperature">
+                </section>
+                <p> The purpose of this project was to analyze how weather changes as 
+                    you get closer to the equator. To accomplish this analysis, we first pulled
+                    data from the OpenWeather API to assemble a dataset on over 500 cities.
+                    <br>
+                    <br>
+                    After assembling the dataset, we used Matpotlib to plot various aspects of 
+                    the weather vs. latitude. Factors we looked at included: temperature,
+                    cloudiness, wind speed and humidty. This site provides the source data and vizualizations
+                    created as part of the analysis, as well as explanations and descriptions of any 
+                    trends and correlations witnessed.</p>
+        </section>
+    </div>
 
+    <div class= "last container">
+        <div class="row">
+            
+        </div>
+    </div>
 </body>
-
-
-
 </html>
